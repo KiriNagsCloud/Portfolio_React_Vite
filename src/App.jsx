@@ -1,22 +1,25 @@
-import React from "react";
-import Header from "./components/Header";
-import About from "./components/About";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
-import Hobbies from "./components/Hobbies";
-import SocialMedia from "./components/SocialMedia";
-import QrCodeSection from "./components/QrCodeSection";
+import Home from "./Components/Home";
+import AboutMe from "./Components/AboutMe";
+import NavBar from "./Components/Custom/NavBar";
+import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <About />
-      <Education />
-      <Skills />
-      <Hobbies />
-      <SocialMedia />
-      <QrCodeSection />
+    <div className="w-full h-full font-mono">
+      <div className="w-full border-0 justify-center">
+        <NavBar />
+        <div className="w-full bg-[#10172A] pt-10">
+          <Home />
+          <AboutMe />
+          <Experience />
+          <Projects />
+          <Contact />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
